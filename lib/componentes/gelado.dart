@@ -28,7 +28,7 @@ class Gelado extends StatelessWidget {
             width: 700,
             child: Center(
               child: SizedBox(
-                width: 510, //tamanho das bebidas
+                width: 700, //tamanho das bebidas
                 child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     itemCount: gelado.length,
