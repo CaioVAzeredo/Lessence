@@ -10,5 +10,6 @@ class Filtrado_model{
 }
 
 List<Filtrado_model> filtrado_model = [
-  Filtrado_model('1','assets/filtrado.jpg','V60','150 ml', "O método filtrado, desenvolvido no Japão, utiliza um processo de coar café que resulta em uma bebida equilibrada e aromática, destacando notas sutis e um perfil de sabor refinado.")
+  Filtrado_model('1','assets/filtrado.jpg','V60','150 ml', "O método filtrado, desenvolvido no Japão, utiliza um processo de coar café que resulta em uma bebida equilibrada e aromática, destacando notas sutis e um perfil de sabor refinado."),
+  Filtrado_model('1','assets/filtradoSemNome2.jpg','','', ""),
 ];
