@@ -24,7 +24,7 @@ class Gelado extends StatelessWidget {
               borderRadius: BorderRadius.circular(10),
               color: Colors.black.withOpacity(0.4),
             ),
-            height: 300,
+            height: 304,
             width: 700,
             child: Center(
               child: SizedBox(
