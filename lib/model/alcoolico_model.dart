@@ -9,7 +9,6 @@ class Alcoolico_model{
 }
 
 List<Alcoolico_model> alcoolico_model = [
-  Alcoolico_model('1','assets/espresso_martini.jpg','Espresso Martini', "O Espresso Martini é um coquetel elegante que combina espresso duplo, xarope de baunilha e vodka, criando uma bebida sofisticada com um equilíbrio perfeito entre o sabor intenso do café e a suavidade da baunilha e da vodka."),
-  Alcoolico_model('2','assets/irish_coffe.jpg','Irish Coffee', "O Irish Coffee é uma bebida clássica que mistura xarope de açúcar de coco, whisky e cold brew, tudo coberto com uma camada generosa de creme de leite, resultando em um coquetel suave e reconfortante com um toque doce e cremoso."),
-  Alcoolico_model('3','assets/sem-nome-alcolico.JPG','', ""),
+  Alcoolico_model('1','assets/sem-nome-alcolico.JPG','Céu de Brasília', "Céu de Brasília é uma bebida refrescante que mistura o sabor amargo do Aperol, a doçura cítrica do suco de laranja e a intensidade do espresso, oferecendo um equilíbrio perfeito entre notas frutadas, amargas e café."),
+  Alcoolico_model('2','assets/Carajillo02.JPG','Carajillo', "Carajillo é uma bebida refrescante que combina a intensidade do espresso duplo com a doçura envolvente do Licor 43, servida sobre gelo. O resultado é um sabor marcante e equilibrado, com notas aromáticas e final levemente cítrico."),
 ];
