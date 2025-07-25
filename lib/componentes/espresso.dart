@@ -29,7 +29,7 @@ class Espresso extends StatelessWidget {
             width: 700,
             child: Center(
               child: SizedBox(
-                width: 675, //tamanho das bebidas
+                width: 700, //tamanho das bebidas
                 child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     itemCount: espressos.length,
