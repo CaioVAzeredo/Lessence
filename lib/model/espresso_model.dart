@@ -13,5 +13,4 @@ List<Espresso_model> espresso_model = [
   Espresso_model('2', 'assets/cafe_expresso02.JPG', 'Espresso Carioca', '80ml', "O espresso carioca é um café espresso com adição de um pouco de água, resultando em uma bebida mais suave, mas ainda com o sabor característico do espresso."),
   Espresso_model('6', 'assets/capuchino_com_avelã.JPG', 'Cappuccino com avelã ', '80ml', "O cappuccino com avelã é uma bebida cremosa que combina o café espresso, leite vaporizado e espuma de leite, com um toque adocicado e aromático de avelã."),
   Espresso_model('3', 'assets/CAPUCCINO.JPG', 'Capuccino', '80ml', "O cappuccino é uma combinação clássica de espresso, leite vaporizado e uma camada de espuma cremosa, criando uma bebida equilibrada e suave."),
-  Espresso_model('4', 'assets/capuccino_com_chocolate.jpg', 'Capuccino com chocolate', '80ml', "O cappuccino com chocolate é uma variação deliciosa que combina espresso, leite vaporizado e chocolate meio amargo, criando uma bebida rica e indulgente com um toque de doçura."),
 ];

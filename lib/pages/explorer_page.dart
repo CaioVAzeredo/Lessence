@@ -32,20 +32,21 @@ class _ExplorerPageState extends State<ExplorerPage> {
         Header(),
         Padding(
           padding: const EdgeInsets.only(bottom: 16),
-          child: Espresso(espressos: espresso),
-        ),
-        Padding(
-          padding: const EdgeInsets.only(bottom: 16),
-          child: Filtrado(filtrado: filtrado),
-        ),
-        Padding(
-          padding: const EdgeInsets.only(bottom: 16),
           child: Gelado(gelado: gelado),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(bottom: 16),
+          child: Espresso(espressos: espresso),
         ),
         Padding(
           padding: const EdgeInsets.only(bottom: 16),
           child: Alcoolico(alcoolico: alcoolico),
         ),
+        Padding(
+          padding: const EdgeInsets.only(bottom: 16),
+          child: Filtrado(filtrado: filtrado),
+        ),
+
         Info(),
       ],
     );

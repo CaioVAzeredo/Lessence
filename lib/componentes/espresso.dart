@@ -21,79 +21,68 @@ class Espresso extends StatelessWidget {
           ),
         ),
         Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(10),
-            color: Colors.black.withOpacity(0.4),
-          ),
-          height: 300,
-          width: 700,
-          child: ListView.builder(
-              scrollDirection: Axis.horizontal,
-              itemCount: espressos.length,
-              itemBuilder: (context, index) {
-                final espresso = espressos[index];
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              color: Colors.black.withOpacity(0.4),
+            ),
+            height: 304,
+            width: 700,
+            child: Center(
+              child: SizedBox(
+                width: 675, //tamanho das bebidas
+                child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: espressos.length,
+                    itemBuilder: (context, index) {
+                      final espresso = espressos[index];
 
-                return SizedBox(
-                  width: 168,
-                  height: 100,
-                  child: Card(
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        ClipRRect(
-                          borderRadius: BorderRadius.vertical(top: Radius
-                              .circular(8)),
-                          child: AspectRatio(
-                            aspectRatio: 0.73,
-                            child: Stack(
-                              fit: StackFit.expand,
-                              children: [
-                                InkWell(
-                                  onTap: () {
-                                    Navigator.push(context,
-                                        MaterialPageRoute(builder: (context) {
-                                          return DetalheEspresso(
-                                            espresso_model: espresso,
-                                          );
-                                        }));
-                                  },
-                                  child: Container(
-                                    child: Image.asset(
-                                      espresso.imagem,
-                                      fit: BoxFit.cover,
-                                    ),
+                      return SizedBox(
+                        width: 168,
+                        height: 100,
+                        child: Card(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              ClipRRect(
+                                borderRadius: BorderRadius.vertical(
+                                    top: Radius.circular(8)),
+                                child: AspectRatio(
+                                  aspectRatio: 0.73,
+                                  child: Stack(
+                                    fit: StackFit.expand,
+                                    children: [
+                                      InkWell(
+                                        onTap: (){
+                                          Navigator.push(context, MaterialPageRoute(builder: (context){
+                                            return DetalheEspresso(espresso_model: espresso);
+                                          }));
+                                        },
+                                        child:Image.asset(
+                                          espresso.imagem,
+                                          fit: BoxFit.cover,
+                                        ) ,
+                                      ),
+                                    ],
                                   ),
-                                )
-                              ],
-                            ),
+                                ),
+                              ),
+                              //info
+                              ListTile(
+                                title: Text(
+                                  espresso.nome,
+                                  style: Theme.of(context).textTheme.titleSmall,
+                                ),
+                                onTap: () {
+                                  print("Clicou em ${espresso.nome}");
+                                },
+                              )
+                            ],
                           ),
                         ),
-                        //info
-                        ListTile(
-                          title: Text(
-                            espresso.nome,
-                            style: Theme
-                                .of(context)
-                                .textTheme
-                                .titleSmall,
-                          ),
-                          subtitle: Text(
-                            espresso.ml,
-                            style: Theme
-                                .of(context)
-                                .textTheme
-                                .bodySmall,
-                          ),
-                          onTap: () {
-                            print("Clicou em ${espresso.nome}");
-                          },
-                        ),
-                      ],
-                    ),
-                  ),
-                );
-              }),
-        )
+                      );
+                    }),
+              ),
+            ))
       ],
     );
   }
